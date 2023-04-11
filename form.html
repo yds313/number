@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)file:///C:/Users/Durga%20satish%20yarra/Desktop/form.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <link rel="stylesheet" href="./form_files/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="./form_files/jquery-3.5.1.slim.min.js.download" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="./form_files/popper.min.js.download" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="./form_files/bootstrap.min.js.download" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+	<style>
+	@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.hello {
+    display: flex;
+    justify-content: space-around;
+}
+.button{
+display: flex;
+    justify-content: space-around;
+	}
+.final {
+    display: flex;
+    justify-content: space-around;
+}
+
+	</style>
+</head>
+
+<body>
+    <div class="container">
+
+        <form id="myForm">
+            <div class=" d-flex flex-row">
+                <div class="mb-3  mr-3 ">
+                    <label for="sampledate">sample date</label>
+                    <input type="date" class="form-control" id="startDate">
+                    <p id="nameErrMsg" class="error-message required"></p>
+                </div>
+                <div class="mb-3 mr-3">
+                    <label for="report date">report date</label>
+                    <input type="date" class="form-control" id="reportdate">
+                    <p id="emailErrMsg" class="error-message required"></p>
+                </div>
+                <div class="mb-3 mr-3">
+                    <label for="labid">lab id</label>
+                    <input type="text" class="form-control" id="labid">
+                    <p id="emailErrMsg" class="error-message required"></p>
+                </div>
+            </div>
+            <div class=" d-flex flex-row">
+                <div class="mb-3 mr-3 ">
+                    <label for="owners name">owners name</label>
+                    <input type="text" class="form-control" id="ownersname" required="">
+                </div>
+                <div class="mb-3 mr-3">
+                    <label for="species">species</label>
+                    <input type="text" class="form-control" id="species">
+
+                </div>
+            </div>
+            <div class=" d-flex flex-row">
+                <div class="mb-3 mr-3 ">
+                    <label for="S.NO">S.NO</label>
+                    <input type="number" class="form-control" id="number">
+
+                </div>
+                <div class="mb-3 mr-3">
+                    <label for="petsnames">pet's name</label>
+                    <input type="text" class="form-control" id="pet">
+
+                </div>
+            </div>
+            <div class=" d-flex flex-row">
+                <div class="mb-3 mr-3 ">
+                    <label for="age">age</label>
+                    <input type="number" class="form-control" id="age">
+
+                </div>
+                <div class="mb-3 mr-3">
+                    <label for="bree">bree</label>
+                    <input type="text" class="form-control" id="bree">
+
+                </div>
+                <div class="mb-3 mr-3 d-flex flex-column">
+                    <label for="sex">sex</label>
+                    <select id="sex">
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+
+                </div>
+            </div>
+            <div class=" d-flex flex-row">
+                <div class="mb-3 mr-3">
+                    <label for="refer">ref.by</label>
+                    <input type="text" class="form-control" id="refer">
+
+                </div>
+                <div class="mb-3 mr-3">
+                    <label for="region">region examined</label>
+                    <input type="text" class="form-control" id="region">
+
+                </div>
+            </div>
+            <div class="mb-3 mr-3">
+                <label for="technique">technique</label>
+                <input type="text" class="form-control" id="technique">
+
+            </div>
+            <p>left ventricle meansurements</p>
+            <div class="hello">
+                <div class="mb-3 mr-3">
+                    IVS
+                </div>
+                <div class="d-flex flex-column mr-3">
+                    <label for="dialstone">dialstone</label>
+                    <input type="text" id="dialstone">
+                </div>
+                <div class="d-flex flex-column mr-3">
+                    <label for="systole">systole</label>
+                    <input type="text" id="systole">
+                </div>
+            </div>
+            <div class="hello">
+                <div class="mb-3 mr-3">
+                    LVID
+                </div>
+
+                <div class="d-flex flex-column mr-3 mb-3">
+                    <label for="dialstone"></label>
+                    <input type="text" id="dialstone">
+                </div>
+                <div class="d-flex flex-column mr-3 mb-3">
+                    <label for="systole"></label>
+                    <input type="text" id="systole">
+                </div>
+            </div>
+            <div class="hello">
+                <div class="mb-3 mr-3">
+                    LVPW
+                </div>
+   
+                <div class="d-flex flex-column mr-3 mb-3">
+                    <label for="dialstone"></label>
+                    <input type="text" id="dialstone">
+                </div>
+                <div class="d-flex flex-column mr-3 mb-3">
+                    <label for="systole"></label>
+                    <input type="text" id="systole">
+                </div>
+            </div>
+
+            <div class="hello d-flex flex-row  justify-content-start mr-3 mb-3">
+                <div class="mr-3 mb-3">
+                    <label for="LAD">LAD</label>
+                    <input type="text" class="form-control" id="LAD">
+
+                </div>
+                <div class="mb-3 mr-3">
+                    <label for="aod">AOD</label>
+                    <input type="text" class="form-control" id="AOD">
+
+                </div>
+            </div>
+
+            <div class="final d-flex flex-row  mr-3 mb-3">
+                <label for="parameters">parameters</label>
+                <label for="observations">observations</label>
+                <div class="pluss d-flex flex-row justify-content-center" id="plus1">
+                    <p class="plus" id="plus2">+</p>
+                </div>
+            </div>
+
+
+            <div class="final d-flex flex-row mr-3 mb-3" id="main">
+                <input type="text" id="parameters">
+                <input type="text" id="observations">
+                <p class="minus" id="minus2">-</p>
+
+            </div>
+			<div class="need" id="final1"></div>
+			</form></div>
+	<div class="button d-flex flex-row justify-content-center mb-3 mr-3">
+	<button class="mr-3">cancel</button>
+	<button>required</button>
+	</div>
+            
+        
+    
+	
+    <script>
+        let parameter = document.getElementById("parameters");
+        let observation = document.getElementById("observations");
+        let plus = document.getElementById("plus1");
+        let minus1 = document.getElementById("minus2");
+        let main = document.getElementById("main");
+		let final=document.getElementById("final1");
+
+
+let input1=document.createElement("INPUT");
+let input2=document.createElement("INPUT");
+let contain=document.createElement("div");
+        plus.addEventListener("click", add);
+
+        function add() {
+            console.log("hello");
+			let input1=document.createElement("INPUT");
+			input1.id="input1";
+			let input2=document.createElement("INPUT");
+			input2.id="input2";
+			let contain=document.createElement("div");
+			contain.id="container";
+			
+			let contain=document.createElement("div");
+			
+			input1.type = "text";
+			
+			input2.type = "text";
+			
+            contain.appendChild(input1);
+			contain.appendChild(input2);
+			contain.appendChild(minus1);
+			final.appendChild(contain);
+			
+        }
+               minus1.addEventListener("click", sub);
+
+        function sub() {
+            console.log("hello");
+            //event.preventDefault();
+			let contain=document.getElementById("contain");
+            final.removeChild(contain);
+
+        }
+    </script>
+
+
+</body></html>
